@@ -1,0 +1,13 @@
+*.pyc
+*~
+__pycache__
+
+.NNvenv/
+db.sqlite3
+
+/static/
+
+.vscode/
+.history/
+*.code-workspace
+
