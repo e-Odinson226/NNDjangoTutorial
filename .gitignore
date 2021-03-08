@@ -1,11 +1,10 @@
 *.pyc
 *~
 __pycache__
-
 .NNvenv/
 db.sqlite3
-
 /static/
+.sensitive_data.json
 
 .vscode/
 .history/
