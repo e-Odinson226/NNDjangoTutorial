@@ -4,7 +4,7 @@ from .models import Product
 def products_view(request):
     obj_list = Product.objects.all()
     context ={
-        "objects" : obj_list
+        "products" : obj_list
     }
     return render(request, "product/products.html", context)
 
