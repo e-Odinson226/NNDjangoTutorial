@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product
 from .forms import ProductForm
 
@@ -19,7 +19,8 @@ def products_view(request):
     return render(request, "product/products.html", context)
 
 def product_single_view(request, id):
-    obj = Product.objects.get(id=id)
+    #obj = Product.objects.get(id=id)
+    obj = get_object_or_404(Product, id=id)
     context ={
         "title" : obj.title,
         "description" : obj.description,
