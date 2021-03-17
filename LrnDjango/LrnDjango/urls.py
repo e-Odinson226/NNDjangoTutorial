@@ -20,7 +20,8 @@ from blog.views import homepage, contact, info
 from product.views import (
                             product_single_view,
                             products_view,
-                            product_create_view   )
+                            product_create_view,
+                            product_delete_view   )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,5 +33,6 @@ urlpatterns = [
     path('products/', products_view, name="products"),
     path('product/<int:id>/', product_single_view, name="pDetail"),
     path('product/create/', product_create_view, name="pCreate"),
+    path('product/<int:id>/delete', product_delete_view, name="pDelete"),
 
 ]
