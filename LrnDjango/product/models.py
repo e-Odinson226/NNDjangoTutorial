@@ -9,4 +9,4 @@ class Product(models.Model):
     stock       = models.BooleanField()
 
     def get_absolute_url(self):
-        return  reverse("pDetail", kwargs={"id":self.id}) #f"/products/{self.id}"
+        return  reverse("product:pDetail", kwargs={"id":self.id}) #f"/products/{self.id}"
