@@ -7,7 +7,7 @@ Products
 {% block content %}
     {% for product in products %}
         {% if product.title %}
-            <h1>{{ product.title }}</h1>
+            <h1><a href="{{ product.get_absolute_url }}" >{{ product.title }}</a></h1>
         {% endif %}
             
         {% if product.description %}
