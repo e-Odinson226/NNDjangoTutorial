@@ -31,8 +31,8 @@ urlpatterns = [
     path('about/', info, name="info"),
     #product
     path('products/', products_view, name="products"),
-    path('product/<int:id>/', product_single_view, name="pDetail"),
-    path('product/create/', product_create_view, name="pCreate"),
-    path('product/<int:id>/delete', product_delete_view, name="pDelete"),
+    path('products/<int:id>/', product_single_view, name="pDetail"),
+    path('products/create/', product_create_view, name="pCreate"),
+    path('products/<int:id>/delete', product_delete_view, name="pDelete"),
 
 ]
