@@ -24,7 +24,9 @@ urlpatterns = [
     path('', homepage, name="homepage"),
     path('contact/', contact, name="contact"),
     path('about/', info, name="info"),
-    #products
-    path('products/', include('product.urls'))
+    #product
+    path('products/', include('product.urls')),
+    #producer
+    path('producers/', include('producer.urls'))
 
 ]
