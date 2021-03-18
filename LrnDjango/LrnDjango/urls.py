@@ -21,12 +21,10 @@ from blog.views import homepage, contact, info
 urlpatterns = [
     path('admin/', admin.site.urls),
     #blog
-    path('', homepage, name="homepage"),
-    path('contact/', contact, name="contact"),
-    path('about/', info, name="info"),
+    path('', include('blog.urls')),
     #product
-    path('products/', include('product.urls')),
+    path('product/', include('product.urls')),
     #producer
-    path('producers/', include('producer.urls'))
+    path('producer/', include('producer.urls'))
 
 ]
