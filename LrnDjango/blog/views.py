@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
-def homepage(request, *args, **kwargs):
-    return render(request, "home.html", {})
+def articles(request, *args, **kwargs):
+    
+    return render(request, "articles_all.html", {})
 
 def contact(request, *args, **kwargs):
     return render(request, "contact.html", {})
