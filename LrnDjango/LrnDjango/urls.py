@@ -16,14 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from blog.views import homepage, contact, info
+#from blog.views import homepage, contact, info
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #blog
-    path('', include('blog.urls')),
+    path('blog/', include('blog.urls')),
     #product
-    path('product/', include('product.urls')),
+    path('', include('product.urls')),
+    #path('product/', include('product.urls')),
     #producer
     path('producer/', include('producer.urls'))
 
