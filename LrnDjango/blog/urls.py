@@ -5,7 +5,8 @@ from .views import (    articles,
 
 app_name = "blog"
 urlpatterns =[
-    path('articles/', articles, name="articles"),
+    
+    path('articles/', articles, name="home"),
     path('contact/', contact, name="contact"),
     path('about/', info, name="info"),
 ]
