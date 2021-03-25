@@ -26,6 +26,6 @@ urlpatterns = [
     path('', include('product.urls')),
     #path('product/', include('product.urls')),
     #producer
-    path('producer/', include('producer.urls'))
+
 
 ]
